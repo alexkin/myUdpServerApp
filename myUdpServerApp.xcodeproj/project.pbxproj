@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E37608C18FD46A9007D0D73 /* dateDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E37608B18FD46A9007D0D73 /* dateDelegate.m */; };
+		8E6F7A6218FBD93F0093F6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6F7A6118FBD93F0093F6F5 /* Foundation.framework */; };
+		8E6F7A6418FBD93F0093F6F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6F7A6318FBD93F0093F6F5 /* CoreGraphics.framework */; };
+		8E6F7A6618FBD93F0093F6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6F7A6518FBD93F0093F6F5 /* UIKit.framework */; };
+		8E6F7A6C18FBD93F0093F6F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7A6A18FBD93F0093F6F5 /* InfoPlist.strings */; };
+		8E6F7A6E18FBD93F0093F6F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7A6D18FBD93F0093F6F5 /* main.m */; };
+		8E6F7A7218FBD93F0093F6F5 /* udpServerAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7A7118FBD93F0093F6F5 /* udpServerAppAppDelegate.m */; };
+		8E6F7A7518FBD93F0093F6F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7A7318FBD93F0093F6F5 /* Main.storyboard */; };
+		8E6F7A7818FBD93F0093F6F5 /* udpServerAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7A7718FBD93F0093F6F5 /* udpServerAppViewController.m */; };
+		8E6F7A7A18FBD93F0093F6F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7A7918FBD93F0093F6F5 /* Images.xcassets */; };
+		8E6F7A8118FBD93F0093F6F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6F7A8018FBD93F0093F6F5 /* XCTest.framework */; };
+		8E6F7A8218FBD93F0093F6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6F7A6118FBD93F0093F6F5 /* Foundation.framework */; };
+		8E6F7A8318FBD93F0093F6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6F7A6518FBD93F0093F6F5 /* UIKit.framework */; };
+		8E6F7A8B18FBD93F0093F6F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7A8918FBD93F0093F6F5 /* InfoPlist.strings */; };
+		8E6F7A8D18FBD93F0093F6F5 /* myUdpServerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7A8C18FBD93F0093F6F5 /* myUdpServerAppTests.m */; };
+		8E6F7AA018FBDC870093F6F5 /* bg0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7A9818FBDC870093F6F5 /* bg0.jpg */; };
+		8E6F7AA118FBDC870093F6F5 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7A9918FBDC870093F6F5 /* bg1.png */; };
+		8EE0BB5418FCC0E300DF4CE0 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB4D18FCC0E300DF4CE0 /* add.png */; };
+		8EE0BB5518FCC0E300DF4CE0 /* pause-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB4E18FCC0E300DF4CE0 /* pause-blue.png */; };
+		8EE0BB5618FCC0E300DF4CE0 /* play-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB4F18FCC0E300DF4CE0 /* play-blue.png */; };
+		8EE0BB5718FCC0E300DF4CE0 /* play-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5018FCC0E300DF4CE0 /* play-pause.png */; };
+		8EE0BB5818FCC0E300DF4CE0 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5118FCC0E300DF4CE0 /* stop.png */; };
+		8EE0BB5918FCC0E300DF4CE0 /* vol+.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5218FCC0E300DF4CE0 /* vol+.png */; };
+		8EE0BB5A18FCC0E300DF4CE0 /* vol-.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5318FCC0E300DF4CE0 /* vol-.png */; };
+		8EE0BB6218FCC75300DF4CE0 /* button0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5C18FCC75300DF4CE0 /* button0.png */; };
+		8EE0BB6318FCC75300DF4CE0 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5D18FCC75300DF4CE0 /* button1.png */; };
+		8EE0BB6418FCC75300DF4CE0 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5E18FCC75300DF4CE0 /* button2.png */; };
+		8EE0BB6518FCC75300DF4CE0 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB5F18FCC75300DF4CE0 /* button3.png */; };
+		8EE0BB6618FCC75300DF4CE0 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB6018FCC75300DF4CE0 /* button4.png */; };
+		8EE0BB6718FCC75300DF4CE0 /* button5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB6118FCC75300DF4CE0 /* button5.png */; };
+		8EE0BB7018FCE38500DF4CE0 /* setUdpIpAndPortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0BB6E18FCE38500DF4CE0 /* setUdpIpAndPortViewController.m */; };
+		8EE0BB7118FCE38500DF4CE0 /* setUdpIpAndPortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0BB6F18FCE38500DF4CE0 /* setUdpIpAndPortViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E6F7A8418FBD93F0093F6F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E6F7A5618FBD93F0093F6F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E6F7A5D18FBD93F0093F6F5;
+			remoteInfo = myUdpServerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E37608A18FD46A9007D0D73 /* dateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateDelegate.h; sourceTree = "<group>"; };
+		8E37608B18FD46A9007D0D73 /* dateDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateDelegate.m; sourceTree = "<group>"; };
+		8E37608E18FD480C007D0D73 /* passValueByDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = passValueByDelegate.h; sourceTree = "<group>"; };
+		8E6F7A5E18FBD93F0093F6F5 /* myUdpServerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myUdpServerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6F7A6118FBD93F0093F6F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E6F7A6318FBD93F0093F6F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E6F7A6518FBD93F0093F6F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E6F7A6918FBD93F0093F6F5 /* myUdpServerApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myUdpServerApp-Info.plist"; sourceTree = "<group>"; };
+		8E6F7A6B18FBD93F0093F6F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E6F7A6D18FBD93F0093F6F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E6F7A6F18FBD93F0093F6F5 /* myUdpServerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myUdpServerApp-Prefix.pch"; sourceTree = "<group>"; };
+		8E6F7A7018FBD93F0093F6F5 /* udpServerAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = udpServerAppAppDelegate.h; sourceTree = "<group>"; };
+		8E6F7A7118FBD93F0093F6F5 /* udpServerAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = udpServerAppAppDelegate.m; sourceTree = "<group>"; };
+		8E6F7A7418FBD93F0093F6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E6F7A7618FBD93F0093F6F5 /* udpServerAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = udpServerAppViewController.h; sourceTree = "<group>"; };
+		8E6F7A7718FBD93F0093F6F5 /* udpServerAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = udpServerAppViewController.m; sourceTree = "<group>"; };
+		8E6F7A7918FBD93F0093F6F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E6F7A7F18FBD93F0093F6F5 /* myUdpServerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myUdpServerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6F7A8018FBD93F0093F6F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8E6F7A8818FBD93F0093F6F5 /* myUdpServerAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myUdpServerAppTests-Info.plist"; sourceTree = "<group>"; };
+		8E6F7A8A18FBD93F0093F6F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E6F7A8C18FBD93F0093F6F5 /* myUdpServerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myUdpServerAppTests.m; sourceTree = "<group>"; };
+		8E6F7A9818FBDC870093F6F5 /* bg0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg0.jpg; path = ../pics/bg0.jpg; sourceTree = "<group>"; };
+		8E6F7A9918FBDC870093F6F5 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg1.png; path = ../pics/bg1.png; sourceTree = "<group>"; };
+		8EE0BB4D18FCC0E300DF4CE0 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		8EE0BB4E18FCC0E300DF4CE0 /* pause-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-blue.png"; sourceTree = "<group>"; };
+		8EE0BB4F18FCC0E300DF4CE0 /* play-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-blue.png"; sourceTree = "<group>"; };
+		8EE0BB5018FCC0E300DF4CE0 /* play-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-pause.png"; sourceTree = "<group>"; };
+		8EE0BB5118FCC0E300DF4CE0 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		8EE0BB5218FCC0E300DF4CE0 /* vol+.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vol+.png"; sourceTree = "<group>"; };
+		8EE0BB5318FCC0E300DF4CE0 /* vol-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vol-.png"; sourceTree = "<group>"; };
+		8EE0BB5C18FCC75300DF4CE0 /* button0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button0.png; sourceTree = "<group>"; };
+		8EE0BB5D18FCC75300DF4CE0 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		8EE0BB5E18FCC75300DF4CE0 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
+		8EE0BB5F18FCC75300DF4CE0 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
+		8EE0BB6018FCC75300DF4CE0 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		8EE0BB6118FCC75300DF4CE0 /* button5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button5.png; sourceTree = "<group>"; };
+		8EE0BB6D18FCE38500DF4CE0 /* setUdpIpAndPortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setUdpIpAndPortViewController.h; sourceTree = "<group>"; };
+		8EE0BB6E18FCE38500DF4CE0 /* setUdpIpAndPortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setUdpIpAndPortViewController.m; sourceTree = "<group>"; };
+		8EE0BB6F18FCE38500DF4CE0 /* setUdpIpAndPortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = setUdpIpAndPortViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E6F7A5B18FBD93F0093F6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6F7A6418FBD93F0093F6F5 /* CoreGraphics.framework in Frameworks */,
+				8E6F7A6618FBD93F0093F6F5 /* UIKit.framework in Frameworks */,
+				8E6F7A6218FBD93F0093F6F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6F7A7C18FBD93F0093F6F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6F7A8118FBD93F0093F6F5 /* XCTest.framework in Frameworks */,
+				8E6F7A8318FBD93F0093F6F5 /* UIKit.framework in Frameworks */,
+				8E6F7A8218FBD93F0093F6F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E6F7A5518FBD93F0093F6F5 = {
+			isa = PBXGroup;
+			children = (
+				8E6F7A6718FBD93F0093F6F5 /* myUdpServerApp */,
+				8E6F7A8618FBD93F0093F6F5 /* myUdpServerAppTests */,
+				8E6F7A6018FBD93F0093F6F5 /* Frameworks */,
+				8E6F7A5F18FBD93F0093F6F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E6F7A5F18FBD93F0093F6F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7A5E18FBD93F0093F6F5 /* myUdpServerApp.app */,
+				8E6F7A7F18FBD93F0093F6F5 /* myUdpServerAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E6F7A6018FBD93F0093F6F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7A6118FBD93F0093F6F5 /* Foundation.framework */,
+				8E6F7A6318FBD93F0093F6F5 /* CoreGraphics.framework */,
+				8E6F7A6518FBD93F0093F6F5 /* UIKit.framework */,
+				8E6F7A8018FBD93F0093F6F5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E6F7A6718FBD93F0093F6F5 /* myUdpServerApp */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0BB4C18FCC0E300DF4CE0 /* images */,
+				8E6F7A7018FBD93F0093F6F5 /* udpServerAppAppDelegate.h */,
+				8E6F7A7118FBD93F0093F6F5 /* udpServerAppAppDelegate.m */,
+				8E6F7A7318FBD93F0093F6F5 /* Main.storyboard */,
+				8E6F7A7618FBD93F0093F6F5 /* udpServerAppViewController.h */,
+				8E6F7A7718FBD93F0093F6F5 /* udpServerAppViewController.m */,
+				8E6F7A7918FBD93F0093F6F5 /* Images.xcassets */,
+				8E6F7A6818FBD93F0093F6F5 /* Supporting Files */,
+				8EE0BB6D18FCE38500DF4CE0 /* setUdpIpAndPortViewController.h */,
+				8EE0BB6E18FCE38500DF4CE0 /* setUdpIpAndPortViewController.m */,
+				8EE0BB6F18FCE38500DF4CE0 /* setUdpIpAndPortViewController.xib */,
+				8E37608A18FD46A9007D0D73 /* dateDelegate.h */,
+				8E37608B18FD46A9007D0D73 /* dateDelegate.m */,
+				8E37608E18FD480C007D0D73 /* passValueByDelegate.h */,
+			);
+			path = myUdpServerApp;
+			sourceTree = "<group>";
+		};
+		8E6F7A6818FBD93F0093F6F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7A6918FBD93F0093F6F5 /* myUdpServerApp-Info.plist */,
+				8E6F7A6A18FBD93F0093F6F5 /* InfoPlist.strings */,
+				8E6F7A6D18FBD93F0093F6F5 /* main.m */,
+				8E6F7A6F18FBD93F0093F6F5 /* myUdpServerApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E6F7A8618FBD93F0093F6F5 /* myUdpServerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7A8C18FBD93F0093F6F5 /* myUdpServerAppTests.m */,
+				8E6F7A8718FBD93F0093F6F5 /* Supporting Files */,
+			);
+			path = myUdpServerAppTests;
+			sourceTree = "<group>";
+		};
+		8E6F7A8718FBD93F0093F6F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7A8818FBD93F0093F6F5 /* myUdpServerAppTests-Info.plist */,
+				8E6F7A8918FBD93F0093F6F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EE0BB4C18FCC0E300DF4CE0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0BB5B18FCC75300DF4CE0 /* buttons */,
+				8E6F7A9818FBDC870093F6F5 /* bg0.jpg */,
+				8EE0BB4D18FCC0E300DF4CE0 /* add.png */,
+				8EE0BB4E18FCC0E300DF4CE0 /* pause-blue.png */,
+				8EE0BB4F18FCC0E300DF4CE0 /* play-blue.png */,
+				8EE0BB5018FCC0E300DF4CE0 /* play-pause.png */,
+				8EE0BB5118FCC0E300DF4CE0 /* stop.png */,
+				8E6F7A9918FBDC870093F6F5 /* bg1.png */,
+				8EE0BB5218FCC0E300DF4CE0 /* vol+.png */,
+				8EE0BB5318FCC0E300DF4CE0 /* vol-.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8EE0BB5B18FCC75300DF4CE0 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0BB5C18FCC75300DF4CE0 /* button0.png */,
+				8EE0BB5D18FCC75300DF4CE0 /* button1.png */,
+				8EE0BB5E18FCC75300DF4CE0 /* button2.png */,
+				8EE0BB5F18FCC75300DF4CE0 /* button3.png */,
+				8EE0BB6018FCC75300DF4CE0 /* button4.png */,
+				8EE0BB6118FCC75300DF4CE0 /* button5.png */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E6F7A5D18FBD93F0093F6F5 /* myUdpServerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E6F7A9018FBD9400093F6F5 /* Build configuration list for PBXNativeTarget "myUdpServerApp" */;
+			buildPhases = (
+				8E6F7A5A18FBD93F0093F6F5 /* Sources */,
+				8E6F7A5B18FBD93F0093F6F5 /* Frameworks */,
+				8E6F7A5C18FBD93F0093F6F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myUdpServerApp;
+			productName = myUdpServerApp;
+			productReference = 8E6F7A5E18FBD93F0093F6F5 /* myUdpServerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E6F7A7E18FBD93F0093F6F5 /* myUdpServerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E6F7A9318FBD9400093F6F5 /* Build configuration list for PBXNativeTarget "myUdpServerAppTests" */;
+			buildPhases = (
+				8E6F7A7B18FBD93F0093F6F5 /* Sources */,
+				8E6F7A7C18FBD93F0093F6F5 /* Frameworks */,
+				8E6F7A7D18FBD93F0093F6F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E6F7A8518FBD93F0093F6F5 /* PBXTargetDependency */,
+			);
+			name = myUdpServerAppTests;
+			productName = myUdpServerAppTests;
+			productReference = 8E6F7A7F18FBD93F0093F6F5 /* myUdpServerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E6F7A5618FBD93F0093F6F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = udpServerApp;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					8E6F7A7E18FBD93F0093F6F5 = {
+						TestTargetID = 8E6F7A5D18FBD93F0093F6F5;
+					};
+				};
+			};
+			buildConfigurationList = 8E6F7A5918FBD93F0093F6F5 /* Build configuration list for PBXProject "myUdpServerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E6F7A5518FBD93F0093F6F5;
+			productRefGroup = 8E6F7A5F18FBD93F0093F6F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E6F7A5D18FBD93F0093F6F5 /* myUdpServerApp */,
+				8E6F7A7E18FBD93F0093F6F5 /* myUdpServerAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E6F7A5C18FBD93F0093F6F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6F7AA118FBDC870093F6F5 /* bg1.png in Resources */,
+				8EE0BB7118FCE38500DF4CE0 /* setUdpIpAndPortViewController.xib in Resources */,
+				8EE0BB6218FCC75300DF4CE0 /* button0.png in Resources */,
+				8EE0BB6418FCC75300DF4CE0 /* button2.png in Resources */,
+				8EE0BB5818FCC0E300DF4CE0 /* stop.png in Resources */,
+				8EE0BB6318FCC75300DF4CE0 /* button1.png in Resources */,
+				8EE0BB5918FCC0E300DF4CE0 /* vol+.png in Resources */,
+				8EE0BB5518FCC0E300DF4CE0 /* pause-blue.png in Resources */,
+				8E6F7AA018FBDC870093F6F5 /* bg0.jpg in Resources */,
+				8EE0BB6618FCC75300DF4CE0 /* button4.png in Resources */,
+				8EE0BB5418FCC0E300DF4CE0 /* add.png in Resources */,
+				8EE0BB5618FCC0E300DF4CE0 /* play-blue.png in Resources */,
+				8EE0BB6718FCC75300DF4CE0 /* button5.png in Resources */,
+				8E6F7A7A18FBD93F0093F6F5 /* Images.xcassets in Resources */,
+				8EE0BB5A18FCC0E300DF4CE0 /* vol-.png in Resources */,
+				8E6F7A6C18FBD93F0093F6F5 /* InfoPlist.strings in Resources */,
+				8EE0BB6518FCC75300DF4CE0 /* button3.png in Resources */,
+				8E6F7A7518FBD93F0093F6F5 /* Main.storyboard in Resources */,
+				8EE0BB5718FCC0E300DF4CE0 /* play-pause.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6F7A7D18FBD93F0093F6F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6F7A8B18FBD93F0093F6F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E6F7A5A18FBD93F0093F6F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6F7A6E18FBD93F0093F6F5 /* main.m in Sources */,
+				8E6F7A7818FBD93F0093F6F5 /* udpServerAppViewController.m in Sources */,
+				8E6F7A7218FBD93F0093F6F5 /* udpServerAppAppDelegate.m in Sources */,
+				8E37608C18FD46A9007D0D73 /* dateDelegate.m in Sources */,
+				8EE0BB7018FCE38500DF4CE0 /* setUdpIpAndPortViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6F7A7B18FBD93F0093F6F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6F7A8D18FBD93F0093F6F5 /* myUdpServerAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E6F7A8518FBD93F0093F6F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E6F7A5D18FBD93F0093F6F5 /* myUdpServerApp */;
+			targetProxy = 8E6F7A8418FBD93F0093F6F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E6F7A6A18FBD93F0093F6F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E6F7A6B18FBD93F0093F6F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E6F7A7318FBD93F0093F6F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E6F7A7418FBD93F0093F6F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E6F7A8918FBD93F0093F6F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E6F7A8A18FBD93F0093F6F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E6F7A8E18FBD9400093F6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E6F7A8F18FBD9400093F6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E6F7A9118FBD9400093F6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myUdpServerApp/myUdpServerApp-Prefix.pch";
+				INFOPLIST_FILE = "myUdpServerApp/myUdpServerApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E6F7A9218FBD9400093F6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myUdpServerApp/myUdpServerApp-Prefix.pch";
+				INFOPLIST_FILE = "myUdpServerApp/myUdpServerApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8E6F7A9418FBD9400093F6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myUdpServerApp.app/myUdpServerApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myUdpServerApp/myUdpServerApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "myUdpServerAppTests/myUdpServerAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8E6F7A9518FBD9400093F6F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/myUdpServerApp.app/myUdpServerApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myUdpServerApp/myUdpServerApp-Prefix.pch";
+				INFOPLIST_FILE = "myUdpServerAppTests/myUdpServerAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E6F7A5918FBD93F0093F6F5 /* Build configuration list for PBXProject "myUdpServerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6F7A8E18FBD9400093F6F5 /* Debug */,
+				8E6F7A8F18FBD9400093F6F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E6F7A9018FBD9400093F6F5 /* Build configuration list for PBXNativeTarget "myUdpServerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6F7A9118FBD9400093F6F5 /* Debug */,
+				8E6F7A9218FBD9400093F6F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E6F7A9318FBD9400093F6F5 /* Build configuration list for PBXNativeTarget "myUdpServerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6F7A9418FBD9400093F6F5 /* Debug */,
+				8E6F7A9518FBD9400093F6F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E6F7A5618FBD93F0093F6F5 /* Project object */;
+}
